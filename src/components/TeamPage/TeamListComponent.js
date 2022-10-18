@@ -53,7 +53,7 @@ export const TeamListComponent = () => {
                     Advertisements
                 </td>
                 <td class="py-4 px-6">
-                (900)-555-5769
+                bruns.jessica@company.org
                 </td>
                 <td class="py-4 px-6">
                 <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
@@ -95,7 +95,7 @@ export const TeamListComponent = () => {
                     Developer
                 </td>
                 <td class="py-4 px-6">
-                (900)-555-5454
+                latimore.tim@company.org
                 </td>
                 <td class="py-4 px-6">
                 <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
