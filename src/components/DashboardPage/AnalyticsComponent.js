@@ -8,15 +8,17 @@ export const AnalyticsComponent = () => {
     <label>
       <span class="sr-only">Select date range</span>
       <select class="form-select form-select-sm">
-        <option>Last 7 days</option>
-        <option>Blue</option>
+        <option>Today</option>
+        <option>Last 7 Days</option>
+        <option>Last 14 Days</option>
+        <option>Last Month</option>
       </select>
     </label>
   </div>
-  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-4">
     <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 truncate">23,455</h2>
+      <div class="flex items-start">
+        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800">23,455</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -31,8 +33,8 @@ export const AnalyticsComponent = () => {
       <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Posts</p>
     </div>
     <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="text-2xl mb-2 mr-0 font-extrabold leading-none text-gray-800 truncate">55</h2>
+      <div class="flex items-start ">
+        <h2 class="text-2xl mb-2 mr-0 font-extrabold leading-none text-gray-800 ">55</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -47,8 +49,8 @@ export const AnalyticsComponent = () => {
       <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Comments</p>
     </div>
     <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 truncate">129,752</h2>
+      <div class="flex items-start ">
+        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 ">129,752</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-red-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -63,8 +65,8 @@ export const AnalyticsComponent = () => {
       <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Activities</p>
     </div>
     <div class="p-6 card">
-      <div class="flex items-start justify-between">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 truncate">1,255</h2>
+      <div class="flex items-start ">
+        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 ">1,255</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path

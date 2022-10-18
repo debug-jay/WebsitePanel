@@ -8,7 +8,7 @@ import image from '../images/VitalCorpLogo.svg';
 
 import UserLogo from './UserLogo.svg';
 
-export const SideMenuComponent = ({children}) => {
+export const SideMenuComponent = () => {
 
     
     const [showExit, SetShowExit] = useState(true);
@@ -30,7 +30,6 @@ export const SideMenuComponent = ({children}) => {
         const profilebutton = document.getElementById('profilebutton');
         const profilename = document.getElementById('profilename');
 
-        const navbutton = document.getElementById('navbutton');
         
         SetShowExit(!showExit);     // Changing Button Style
         SetShowHam(!showHamburger); // Changing Button Style
@@ -39,8 +38,8 @@ export const SideMenuComponent = ({children}) => {
         // Once User Opens Menu Do
         if(menuSwitch === true)     // Checking to See if is Open
         {
-         menu1.className = ' transition-all w-16 overflow-x-hidden relative bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
-         menu2.className = ' transition-all w-16 overflow-x-hidden relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         menu1.className = ' transition-all w-16 overflow-x-hidden relative md:flex bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
+         menu2.className = ' transition-all w-16 overflow-x-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
          
          logotext.className = 'hidden';
          profilename.className = 'hidden';
@@ -57,8 +56,8 @@ export const SideMenuComponent = ({children}) => {
         }
         else
         {
-         menu1.className = 'transition-width w-64 overflow-x-hidden relative bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
-         menu2.className = 'transition-width w-64 overflow-x-hidden relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         menu1.className = 'transition-width w-64 overflow-x-hidden relative flex bg-gray-900 shadow h-full fixed flex-col justify-between rounded-md';
+         menu2.className = 'transition-width w-64 overflow-x-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full';
          
          setTimeout(function(){
                profilename.className = 'text-gray-600 text-sm font-medium';
@@ -81,9 +80,9 @@ export const SideMenuComponent = ({children}) => {
 
 <>
 
-<div className='overflow-x-hidden flex flex-no-wrap h-full md:h-screen'>
+<div className='overflow-x-auto flex flex-no-wrap h-full'>
 
-<div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:flex  bg-gray-900 shadow-md md:h-screen h-full fixed flex-col justify-between rounded-md' id='miniMenu1'>
+<div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:block bg-gray-900 shadow-md md:h-screen h-full fixed flex-col justify-between rounded-md' id='miniMenu1'>
 <div class="transition-width overflow-x-hidden sm:relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-full md:h-screen" id='miniMenu2'>
 <div className=" flex justify-end">
     <button id="navbutton" onClick={()=>openNavMenu()} className="flex items-center px-2 py-0 rounded text-blue-200 border border-white hover:text-white hover:border-white">
