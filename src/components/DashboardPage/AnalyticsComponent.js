@@ -28,7 +28,7 @@ export const AnalyticsComponent = () => {
           <span>40%</span>
         </span>
       </div>
-      <p class="text-sm leading-none text-gray-600">Posts</p>
+      <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Posts</p>
     </div>
     <div class="p-6 card">
       <div class="flex items-start justify-between">
@@ -44,7 +44,7 @@ export const AnalyticsComponent = () => {
           <span>240%</span>
         </span>
       </div>
-      <p class="text-sm leading-none text-gray-600">Comments</p>
+      <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Comments</p>
     </div>
     <div class="p-6 card">
       <div class="flex items-start justify-between">
@@ -60,7 +60,7 @@ export const AnalyticsComponent = () => {
           <span>22%</span>
         </span>
       </div>
-      <p class="text-sm leading-none text-gray-600">Activities</p>
+      <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Activities</p>
     </div>
     <div class="p-6 card">
       <div class="flex items-start justify-between">
@@ -76,7 +76,7 @@ export const AnalyticsComponent = () => {
           <span>10%</span>
         </span>
       </div>
-      <p class="text-sm leading-none text-gray-600">Users</p>
+      <p class="mb-2 text-xs font-semibold leading-none tracking-wide text-gray-500 uppercase">Users</p>
     </div>
   </div>
 </section>

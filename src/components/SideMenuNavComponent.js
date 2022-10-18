@@ -1,10 +1,12 @@
 import {Link} from 'react-router-dom';
 import { useState } from 'react';
 
+import { MobileNavigation } from './MobileNavComponent';
+
 // Business Image
 import image from '../images/VitalCorpLogo.svg';
 
-import UserLogo from '../images/UserLogo.svg';
+import UserLogo from './UserLogo.svg';
 
 export const SideMenuNavComponent = ({children}) => {
 
@@ -20,11 +22,15 @@ export const SideMenuNavComponent = ({children}) => {
         const menu1 = document.getElementById('miniMenu1');
         const menu2 = document.getElementById('miniMenu2');
 
+        const logotext = document.getElementById('logotext');
+
         const innerTextComps = document.querySelectorAll('#query1, #query2, #query3, #query4, #query5, #query6, #query7, #query8, #query9, #query10');
         const inboxNotif = document.getElementById('inbox');
         const MainSelection = document.getElementById('mainLoad');
         const profilebutton = document.getElementById('profilebutton');
         const profilename = document.getElementById('profilename');
+
+        const navbutton = document.getElementById('navbutton');
         
         SetShowExit(!showExit);     // Changing Button Style
         SetShowHam(!showHamburger); // Changing Button Style
@@ -33,8 +39,10 @@ export const SideMenuNavComponent = ({children}) => {
         // Once User Opens Menu Do
         if(menuSwitch === true)     // Checking to See if is Open
         {
-         menu1.className = 'transition-width w-16  sm:relative bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
-         menu2.className = 'transition-width w-16 overflow-x-hidden overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         menu1.className = ' transition-all w-16 overflow-x-hidden bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
+         menu2.className = ' transition-all w-16 overflow-x-hidden overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         
+         logotext.className = 'hidden';
          profilename.className = 'hidden';
             profilebutton.className = 'hidden';
 
@@ -44,15 +52,18 @@ export const SideMenuNavComponent = ({children}) => {
             inboxNotif.className = 'hidden';
             MainSelection.className = 'hidden';
 
+
             //SetMenuSwitch(false);   // Closed Menu
         }
         else
         {
-         menu1.className = 'transition-width w-64 overflow-x-hidden sm:relative bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
+         menu1.className = 'transition-width w-64 overflow-x-hidden bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md';
          menu2.className = 'transition-width w-64 overflow-x-hidden overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         
          setTimeout(function(){
                profilename.className = 'text-gray-600 text-sm font-medium';
                profilebutton.className = 'text-gray-600 text-xs';
+               logotext.className = 'flex justify-center items-center text-white';
             },150);
            
             innerTextComps.forEach(element => {
@@ -69,29 +80,30 @@ export const SideMenuNavComponent = ({children}) => {
     return(
 
 <>
+
 <div className='overflow-x-hidden flex flex-no-wrap h-full md:h-screen'>
 
-<div className='transition-width overflow-x-hidden ease w-64 sm:relative bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-md' id='miniMenu1'>
+<div className='transition-width overflow-x-hidden hidden ease w-64 md:flex md:relative bg-gray-900 shadow-md md:h-screen h-full fixed flex-col justify-between rounded-md' id='miniMenu1'>
 <div class="transition-width overflow-x-hidden overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-full md:h-screen" id='miniMenu2'>
 <div className=" flex justify-end">
-    <button onClick={()=>openNavMenu()} className="flex items-center px-2 py-0 rounded text-blue-200 border border-white hover:text-white hover:border-white">
+    <button id="navbutton" onClick={()=>openNavMenu()} className="flex items-center px-2 py-0 rounded text-blue-200 border border-white hover:text-white hover:border-white">
       {showHamburger ? <svg className="fill-current h-8 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>:null}
       {showExit ? <div className=''><svg class="h-8 w-5 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg></div>:null}
     </button>
   </div>
-    <div className='flex justify-center mt-5'><img width={'125px'} src={image} alt=""/></div>
-    <div className='flex justify-center mt-5'><img src={UserLogo} width={'40px'} alt="" className="rounded-full overflow-hidden shadow bg-gray-300" /><div>
+    <div className='flex justify-center mt-5'><img width={'50px'} src={image} alt=""/><p className='flex justify-center items-center text-white' id="logotext">&ensp;Admin Panel</p></div>
+    <div className='flex justify-center mt-5 border-t border-gray-700 pt-4'><img src={UserLogo} width={'40px'} alt="" className="rounded-full overflow-hidden shadow bg-gray-300" /><div>
     
                             <p className="text-gray-600 text-sm font-medium" id="profilename">&ensp;Profile Name </p>
-                            <p className="text-gray-600 text-xs" id="profilebutton">&ensp;<button className='hover:underline'>View Profile</button></p>
+                            <p className="text-gray-600 text-xs" id="profilebutton"><button className='hover:underline'>&ensp;View Profile</button></p>
    </div>
    </div>
 
     
       <nav>
-        <ul class="space-y-2 mt-5">
+        <ul class="space-y-2 mt-4 border-t border-gray-700 pt-4">
          <li id="li1">
             <Link to="/dashboard" class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-gray-700">
                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
@@ -167,8 +179,14 @@ export const SideMenuNavComponent = ({children}) => {
       </ul>
       </nav> 
    </div>
+   
 </div>
-<div className='container mx-auto py-0 md:w-4/5 w-11/12 md:px-6 ml-16 md:ml-auto' id="children">
+
+<div className='flex md:hidden'>
+   <MobileNavigation/>
+</div>
+
+<div className='container mx-auto py-0 md:w-4/5 w-11/12 md:px-6 mt-20 md:mt-0' id="children">
    <div className='w-full h-full rounded '>{children}
    </div>
    </div>

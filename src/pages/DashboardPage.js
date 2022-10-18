@@ -18,8 +18,9 @@ export const DashboardPage = (props) => {
         <>
         <div className="">
 
-            
-            <div className=" border-dashed border-2 border-gray-300 -z-10" id="loadedpage"><p className="text-3xl font-semibold  p-5">Dashboard Page</p>
+        
+
+            <div className="  -z-10" id="loadedpage"><p className="text-3xl font-semibold  p-5">Dashboard Page</p>
             <div className="grid grid-cols-1 md:grid-cols-2 border-black mt-5">
             
             <div className=' col-span-2 flex justify-center' >
@@ -28,13 +29,13 @@ export const DashboardPage = (props) => {
                     </div>
                 </div>
 
-                <div className=" border-black col-span-2 flex justify-center">
-                <div className=" border-black border rounded-md shadow-md mt-5">
+                <div className=" border-gray-500 col-span-2 flex justify-center">
+                <div className=" border-gray-500 border rounded-md shadow-md mt-5">
                 <props.profitComp/></div>
 
                 </div>
-                <div className=" border-black col-span-2 flex justify-center">
-                <div className=" border-black border rounded-md shadow-md mt-5 mb-20">
+                <div className=" border-gray-500 col-span-2 flex justify-center">
+                <div className=" border-gray-500 border rounded-md shadow-md mt-5 mb-20">
                 <props.analyticsComp/></div>
 
                 </div>
