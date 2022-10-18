@@ -2,7 +2,7 @@
 export const AnalyticsComponent = () => {
     return(
         <>
-        <section class="px-4 py-12 mx-auto max-w-7xl">
+        <section class="px-4 py-2 mx-auto max-w-7xl">
   <div class="flex flex-wrap items-center justify-between mb-4 space-y-1">
     <h2 class="text-xl font-semibold text-gray-900">Analytics Overview</h2>
     <label>

@@ -3,7 +3,7 @@ export const ProfitComponent = () => {
     return(
         <> 
 
-<section class="px-4 py-12 mx-auto max-w-7xl">
+<section class="px-4 py-4 mx-auto max-w-7xl">
 <h2 class="text-xl font-semibold text-gray-900">Profit Overview</h2>
   <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
     <div class="card">

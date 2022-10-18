@@ -1,6 +1,6 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 // Imports Of Other Content
-import { SideMenuNavComponent } from '../components/SideMenuNavComponent';
+import { MainLayoutComponent } from '../components/MainLayoutComponent';
 import { DashboardPage } from './DashboardPage';
 import { ManagementPage } from './ManagementPage';
 import { InboxPage } from './InboxPage';
@@ -24,7 +24,7 @@ export const RoutesPages = () => {
         <>
         
         <BrowserRouter>
-        <SideMenuNavComponent>
+        <MainLayoutComponent>
             <Routes>
                 {/* <Route path="/" exact element={<DashboardPage profitComp={ProfitComponent} analyticsComp={AnalyticsComponent}/>}/> * MainLandingPage (That Everyone is Initially Directed To) */}
                 <Route path="/" exact element={<DashboardPage profitComp={ProfitComponent} analyticsComp={AnalyticsComponent}/>}/>
@@ -42,7 +42,7 @@ export const RoutesPages = () => {
                 <Route path="*" element={<NoPage/>}>
                 </Route>
             </Routes>
-        </SideMenuNavComponent>
+        </MainLayoutComponent>
         </BrowserRouter>
         </>
     );
