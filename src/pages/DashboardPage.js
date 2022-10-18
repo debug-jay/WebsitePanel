@@ -30,7 +30,7 @@ export const DashboardPage = (props) => {
                 </div>
 
                 <div className=" border-gray-500 col-span-1 flex justify-center bg-transparent">
-                <div className=" border-gray-500 rounded-md shadow-md mt-5 md:mt-0 w-full">
+                <div className=" border-gray-500 rounded-md mt-5 md:mt-0 w-full">
                 <div className='border border-gray-500 rounded-md shadow-md '>
                     <props.profitComp/>
                </div>
