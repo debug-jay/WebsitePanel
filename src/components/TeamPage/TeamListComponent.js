@@ -9,8 +9,8 @@ export const TeamListComponent = () => {
         
             <div className=" w-full -z-20">
             
-<div class="overflow-x-auto rounded-md shadow-md ml-2 md:ml-auto">
-    <table class="w-full text-sm text-left  text-gray-400">
+<div class="overflow-x-auto rounded-md shadow-lg ml-2 md:ml-auto">
+    <table class="w-full text-sm text-left border border-gray-500 text-gray-400">
         <thead class="text-xs uppercase  bg-gray-700 text-gray-400">
             <tr>
                 <th scope="col" class="py-3 px-6">
@@ -103,7 +103,7 @@ export const TeamListComponent = () => {
         </tbody>
     </table>
 </div>
-<div className='border border-black shadow p-3 mt-5 rounded-lg w-56 hover:cursor-pointer flex items-center justify-between hover:bg-gray-200 ml-2 md:ml-0'><p className=' text-lg'>Add New Person</p> <img src={plusSymbol} width="30px"/></div>
+<div className='border border-black shadow-lg p-3 mt-5 rounded-lg w-56 hover:cursor-pointer flex items-center justify-between hover:bg-gray-200 ml-2 md:ml-0'><p className=' text-lg'>Add New Person</p> <img src={plusSymbol} width="30px"/></div>
             </div>
             
         </>

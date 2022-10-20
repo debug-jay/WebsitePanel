@@ -9,7 +9,11 @@ export const TeamPage = () => {
         <div className="">
             
             <div className="  h-screen -z-10" id="loadedpage"><p className="text-3xl font-semibold  p-5">Team Page</p>
+            
+            <div className="">
             <TeamListComponent/>
+            </div>
+
             </div>
             
         </div>
