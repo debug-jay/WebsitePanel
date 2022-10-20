@@ -17,6 +17,24 @@ import { NoPage } from './NoPage';
 import { ProfitComponent } from "../components/DashboardPage/ProfitComponent";
 import { AnalyticsComponent } from '../components/DashboardPage/AnalyticsComponent';
 
+// Management Page Components
+import { PartneredCompanyComponent } from '../components/ManagementPage/PartnerCompanyComponent';
+// Inbox Page Components
+
+// Users Page Components
+
+// Products Page Components
+
+// Sign In Page Components
+
+// Team Page Components
+
+// Documentation Page Components
+
+// Components Page Components
+
+// Help Page Components
+
 export const RoutesPages = () => {
 
 
@@ -30,7 +48,7 @@ export const RoutesPages = () => {
                 <Route path="/" exact element={<DashboardPage profitComp={ProfitComponent} analyticsComp={AnalyticsComponent}/>}/>
                 {/** Other Routes Go Below */}
                 <Route path="/dashboard" element={<DashboardPage profitComp={ProfitComponent} analyticsComp={AnalyticsComponent}/>}/>
-                <Route path="/management" element={<ManagementPage/>}/>
+                <Route path="/management" element={<ManagementPage partnerCompanyComp={PartneredCompanyComponent}/>}/>
                 <Route path="/inbox" element={<InboxPage/>}/>
                 <Route path="/users" element={<UsersPage/>}/>
                 <Route path="/products" element={<ProductPage/>}/>
