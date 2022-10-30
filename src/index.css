@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -45,7 +46,7 @@ body {
 }
 
 #componentText {
-  font-family: "JosefinSans";
+  font-family: "GilroyL";
 }
 
 /* EVERYTHING TO DO WITH FONTS */
@@ -53,26 +54,47 @@ body {
   font-family: "UbuntuMono-R";
   font-style: normal;
   font-weight: normal;
-  src: local("UbuntuMono-R.ttf") url("./fonts/UbuntuMono-R.ttf") format("truetype");
+  src: url("./fonts/UbuntuMono-R.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "UbuntuMono-B";
   font-style: normal;
   font-weight: normal;
-  src: local("UbuntuMono-B.ttf") url("./fonts/UbuntuMono-B.ttf") format("truetype");
+  src: url("./fonts/UbuntuMono-B.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Ubuntu-R";
   font-style: normal;
   font-weight: normal;
-  src: local("Ubuntu-R.ttf") url("./fonts/Ubuntu-R.ttf") format("truetype");
+  src: url("./fonts/Ubuntu-R.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "JosefinSans";
   font-style: normal;
   font-weight: normal;
-  src: local("JosefinSans-Regular.ttf") url("./fonts/JosefinSans-Regular.ttf") format("truetype");
+  src: url("./fonts/JosefinSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ModerneSansFont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/ModerneSansFont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MoonR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Moon2.0-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "GilroyL";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/Gilroy-Light.otf") format("truetype");
 }

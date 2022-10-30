@@ -11,7 +11,7 @@ export const ReUserLostComponent = () => {
                 </path>
             </svg>
         </span>
-        <p class="text-xl font-semibold text-gray-900 ml-2" id="componentText">
+        <p class="text-xl ml-2" id="componentText">
             Todays User Lost
         </p>
     </div>

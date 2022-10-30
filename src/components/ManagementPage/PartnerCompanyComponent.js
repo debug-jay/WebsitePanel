@@ -7,7 +7,7 @@ export const PartneredCompanyComponent = () => {
     return(
         <>
         <div className=''>
-            <p className='text-xl font-semibold text-gray-900 p-2 bg-white rounded-t-md border border-gray-500'>Partnered Companies</p>
+            <p className='text-xl p-2 bg-white rounded-t-md border border-gray-500'>Partnered Companies</p>
             <div className=' h-56 w-full overflow-y-auto overflow-x-auto'>
             <table class="w-full text-sm text-left  text-gray-400">
         <thead class="text-xs uppercase  bg-gray-700 text-gray-400">

@@ -4,7 +4,7 @@ export const ProfitComponent = () => {
         <> 
 
 <section class="px-0 py-4 mx-4 max-w-7xl">
-<h2 class="text-xl font-semibold text-gray-900" id="componentText">Profit Overview</h2>
+<h2 class="text-xl" id="componentText">Profit Overview</h2>
   <div class="grid grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-4">
     <div class="card">
       <div class="p-5">

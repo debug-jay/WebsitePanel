@@ -4,7 +4,7 @@ export const AnalyticsComponent = () => {
         <>
         <section class="px-4 py-2 mx-auto max-w-7xl">
   <div class="flex flex-wrap items-center justify-between mb-4 space-y-1">
-    <h2 class="text-xl font-semibold text-gray-900" id="componentText">Analytics Overview</h2>
+    <h2 class="text-xl" id="componentText">Analytics Overview</h2>
     <label>
       <span class="sr-only">Select date range</span>
       <select class="form-select form-select-sm">

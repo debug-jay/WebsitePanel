@@ -10,7 +10,7 @@ export const ReProfitComponent = () => {
                 </path>
             </svg>
         </span>
-        <p class="text-xl font-semibold text-gray-900 ml-2" id="componentText">
+        <p class="text-xl ml-2" id="componentText">
             Todays Profit
         </p>
     </div>

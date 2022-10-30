@@ -29,7 +29,7 @@ return(
 
 {/* CHILD PAGES */} 
 <div className='container mx-auto py-0 md:w-11/12 w-full md:px-2 mt-20 lg:mt-0 whitespace-nowrap' id="children">
-   <div className='w-full h-full rounded '>{children}
+   <div className='w-full h-full rounded ' id="componentText">{children}
    </div>
    </div>
    

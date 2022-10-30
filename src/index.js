@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Index } from './components/SideMenuComponent';
 
+import "./fonts/ModerneSansFont.ttf";
+import "./fonts/UbuntuMono-R.ttf";
 
 // Routes Pages Import
 import { RoutesPages } from './pages/RoutesPages';
