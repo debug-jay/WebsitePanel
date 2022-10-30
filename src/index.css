@@ -49,6 +49,14 @@ body {
   font-family: "GilroyL";
 }
 
+#sideMenu {
+  font-family: "ProductSans";
+}
+
+#mobileMenu {
+  font-family: "ProductSans";
+}
+
 /* EVERYTHING TO DO WITH FONTS */
 @font-face {
   font-family: "UbuntuMono-R";
@@ -97,4 +105,11 @@ body {
   font-style: normal;
   font-weight: normal;
   src: url("./fonts/Gilroy-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProductSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/ProductSansRegular.ttf") format("truetype");
 }

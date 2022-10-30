@@ -18,7 +18,7 @@ export const AnalyticsComponent = () => {
   <div class="grid grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-4">
     <div class="p-6 card">
       <div class="flex items-start">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800">23,455</h2>
+        <h2 class="text-3xl font-extrabold leading-none text-gray-800 mb-2 mr-2">23,455</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -34,7 +34,7 @@ export const AnalyticsComponent = () => {
     </div>
     <div class="p-6 card">
       <div class="flex items-start ">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 ">55</h2>
+        <h2 class="text-3xl font-extrabold leading-none text-gray-800 mb-2 mr-2">55</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -50,7 +50,7 @@ export const AnalyticsComponent = () => {
     </div>
     <div class="p-6 card">
       <div class="flex items-start ">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 ">129,752</h2>
+        <h2 class="text-3xl font-extrabold leading-none text-gray-800 mb-2 mr-2">129,752</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-red-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path
@@ -66,7 +66,7 @@ export const AnalyticsComponent = () => {
     </div>
     <div class="p-6 card">
       <div class="flex items-start ">
-        <h2 class="text-2xl mb-2 mr-2 font-extrabold leading-none text-gray-800 ">1,255</h2>
+        <h2 class="text-3xl font-extrabold leading-none text-gray-800 mb-2 mr-2">1,255</h2>
         <span class="flex items-center space-x-1 text-sm font-medium leading-none text-green-600">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-none w-4 h-4">
             <path

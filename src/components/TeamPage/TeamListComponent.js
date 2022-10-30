@@ -13,7 +13,7 @@ export const TeamListComponent = () => {
                 <div className='flex justify-center'>
                 <div className='border rounded-md bg-white h-96 w-80 shadow-lg'>
                     <div className=' flex justify-center'>
-                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <div className='border border-black w-20 rounded-full mt-5 shadow-md'>
                     <img src={UserLogo} alt="" className='w-20'/>
                     </div> 
                     </div>
@@ -46,7 +46,7 @@ export const TeamListComponent = () => {
                 <div className='flex justify-center'>
                 <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 md:mt-0'>
                     <div className=' flex justify-center'>
-                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <div className='border border-black w-20 rounded-full mt-5 shadow-md'>
                     <img src={UserLogo} alt="" className='w-20'/>
                     </div> 
                     </div>
@@ -79,7 +79,7 @@ export const TeamListComponent = () => {
                 <div className='flex justify-center'>
                 <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 xl:mt-0'>
                     <div className=' flex justify-center'>
-                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <div className='border border-black w-20 rounded-full mt-5 shadow-md'>
                     <img src={UserLogo} alt="" className='w-20'/>
                     </div> 
                     </div>
@@ -111,7 +111,7 @@ export const TeamListComponent = () => {
                 <div className='flex justify-center'>
                 <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 2xl:mt-0 mb-10'>
                     <div className=' flex justify-center'>
-                    <div className='border border-black w-20 rounded-full mt-5 '>
+                    <div className='border border-black w-20 rounded-full mt-5 shadow-md'>
                     <img src={UserLogo} alt="" className='w-20'/>
                     </div> 
                     </div>

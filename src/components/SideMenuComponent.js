@@ -80,7 +80,7 @@ export const SideMenuComponent = () => {
 
 <>
 
-<div className='overflow-x-hidden overflow-hidden flex flex-no-wrap h-full z-10'>
+<div className='overflow-x-hidden overflow-hidden flex flex-no-wrap h-full z-10' id="sideMenu">
 
 <div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:block bg-gray-900 shadow-md h-screen fixed flex-col justify-between rounded-tr rounded-br' id='miniMenu1'>
 <div class="transition-width overflow-x-hidden sm:relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-screen" id='miniMenu2'>

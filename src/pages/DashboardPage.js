@@ -64,19 +64,19 @@ export const DashboardPage = (props) => {
 
                             
             <div className=' mt-2 col-span-1 md:col-span-2 lg:row-start-1 lg:col-span-2 flex justify-center w-full mx-auto items-center border-gray-500' >
-                    <div className='w-full lg:w-9/12 xl:w-8/12'>
+                    <div className='w-full xl:w-8/12'>
                         <Chart chartData={chartData}/>
                     </div>
                 </div>
 
-                <div className=" border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90 lg:row-start-2">
+                <div className=" border-gray-500 col-span-1 flex justify-center bg-transparent scale-90 lg:row-start-2">
                 <div className=" border-gray-500 border rounded-md shadow-md w-full bg-white">
                 <props.analyticsComp/>
                 </div>
                 </div>
 
 
-                <div className="overflow-hidden border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90 lg:row-start-2">
+                <div className="overflow-hidden border-gray-500 col-span-1 flex justify-center bg-transparent scale-90 lg:row-start-2">
                 <div className="overflow-hidden border-gray-500 rounded-md w-full bg-white shadow-lg">
                 <div className='border border-gray-500 rounded-md shadow-md overflow-hidden '>
                     <props.profitComp/>
