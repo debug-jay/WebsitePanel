@@ -14,8 +14,8 @@ return(
 <div className='overflow-x-hidden flex flex-no-wrap h-full md:h-screen'>
 
 {/* FOR DESKTOP NAVIGATION */} 
-<div className='hidden relative left-0 top-0 bottom-0 h-screen lg:flex'>
-   
+<div className='hidden relative lg:flex'>
+  
    <SideMenuComponent/>
    
 </div>

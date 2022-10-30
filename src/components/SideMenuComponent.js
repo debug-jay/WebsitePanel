@@ -80,10 +80,10 @@ export const SideMenuComponent = () => {
 
 <>
 
-<div className='overflow-x-hidden overflow-hidden flex flex-no-wrap h-full'>
+<div className='overflow-x-hidden overflow-hidden flex flex-no-wrap h-full z-10'>
 
-<div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:block bg-gray-900 shadow-md md:h-screen h-full fixed flex-col justify-between rounded-tr rounded-br' id='miniMenu1'>
-<div class="transition-width overflow-x-hidden sm:relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-full md:h-screen" id='miniMenu2'>
+<div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:block bg-gray-900 shadow-md h-screen fixed flex-col justify-between rounded-tr rounded-br' id='miniMenu1'>
+<div class="transition-width overflow-x-hidden sm:relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-screen" id='miniMenu2'>
 <div className=" flex justify-end">
     <button id="navbutton" onClick={()=>openNavMenu()} className="flex items-center px-2 py-0 rounded text-blue-200 border border-white hover:text-white hover:border-white">
       {showHamburger ? <svg className="fill-current h-8 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>:null}

@@ -48,31 +48,32 @@ export const DashboardPage = (props) => {
             <div className="overflow-hidden -z-10" id="loadedpage"><p className="text-3xl font-semibold px-6 mt-5 mb-5 md:mb-0" id="componentText">Dashboard Page</p>
             <div className=" grid grid-cols-1 md:grid-cols-2  border-black md:space-y-0">
 
+                            
+            <div className='scale-90 mt-2 lg:scale-80 col-span-1 md:col-span-2 lg:row-start-1 lg:col-span-2 flex justify-center w-full mx-auto items-center border-gray-500' >
+                    <div className='w-full lg:w-9/12 xl:w-8/12'>
+                        <Chart chartData={chartData}/>
+                    </div>
+                </div>
 
-                <div className=" border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90">
-                <div className=" border-gray-500 border rounded-md shadow-lg w-full bg-white">
+                <div className=" border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90 lg:row-start-2">
+                <div className=" border-gray-500 border rounded-md shadow-md w-full bg-white">
                 <props.analyticsComp/>
                 </div>
                 </div>
 
 
-                <div className="overflow-hidden border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90">
+                <div className="overflow-hidden border-gray-500 col-span-1 flex justify-center bg-transparent md:p-6 scale-90 lg:row-start-2">
                 <div className="overflow-hidden border-gray-500 rounded-md w-full bg-white shadow-lg">
-                <div className='border border-gray-500 rounded-md  overflow-hidden '>
+                <div className='border border-gray-500 rounded-md shadow-md overflow-hidden '>
                     <props.profitComp/>
                </div>
                 </div>
                 </div>
                 
-                            
-            <div className='scale-90 lg:scale-80 col-span-1 md:col-span-2 lg:row-start-2 lg:col-span-1 flex justify-center w-full mx-auto items-center border-gray-500' >
-                    <div className='w-full'>
-                        <Chart chartData={chartData}/>
-                    </div>
-                </div>
+
                 
-                <div className=" md:px-6 py-5 overflow-hidden border-gray-500 col-span-1 md:col-span-2 md:grid-cols-3 row-start-4 lg:row-start-2 lg:col-start-2 grid lg:grid-cols-2 bg-transparent">
-                <div className=" border-gray-500 rounded-2xl md:mt-0 lg:mr-5 md:mr-2 lg:ml-6">
+                <div className=" md:px-6 py-1 overflow-hidden border-gray-500 col-span-1 md:col-span-2 md:grid-cols-3 row-start-4 lg:row-start-3 lg:col-start-1 grid lg:grid-cols-3 bg-transparent">
+                <div className=" border-gray-500 rounded-2xl md:mt-0 lg:mr-5 md:mr-2">
                 <div className=' border-gray-500 rounded-2xl shadow-md border scale-90'>
                     <props.reProfitComp/>
                </div>
