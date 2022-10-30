@@ -6,8 +6,9 @@ import trashSymbol from '../images/trashSymbol.svg';
 export const PartneredCompanyComponent = () => {
     return(
         <>
-            <p className='text-xl font-semibold text-gray-900 p-2'>Partnered Companies</p>
-            <div className='border-t border-gray-500 h-56 w-full overflow-y-auto overflow-x-auto'>
+        <div className=''>
+            <p className='text-xl font-semibold text-gray-900 p-2 bg-white rounded-t-md border border-gray-500'>Partnered Companies</p>
+            <div className=' h-56 w-full overflow-y-auto overflow-x-auto'>
             <table class="w-full text-sm text-left  text-gray-400">
         <thead class="text-xs uppercase  bg-gray-700 text-gray-400">
             <tr>
@@ -100,6 +101,7 @@ export const PartneredCompanyComponent = () => {
             </tr>
         </tbody>
     </table>
+            </div>
             </div>
         </>
     );

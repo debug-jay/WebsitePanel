@@ -38,8 +38,8 @@ export const SideMenuComponent = () => {
         // Once User Opens Menu Do
         if(menuSwitch === true)     // Checking to See if is Open
         {
-         menu1.className = ' transition-all w-16 overflow-x-hidden relative md:flex bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-tr rounded-br';
-         menu2.className = ' transition-all w-16 overflow-x-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
+         menu1.className = ' transition-all w-16 overflow-hidden relative md:flex bg-gray-900 shadow md:h-screen h-full fixed flex-col justify-between rounded-tr rounded-br';
+         menu2.className = ' transition-all w-16 overflow-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full md:h-screen';
          
          logotext.className = 'hidden';
          profilename.className = 'hidden';
@@ -56,14 +56,14 @@ export const SideMenuComponent = () => {
         }
         else
         {
-         menu1.className = 'transition-width w-64 overflow-x-hidden relative flex bg-gray-900 shadow h-full fixed flex-col justify-between rounded-tr rounded-br';
-         menu2.className = 'transition-width w-64 overflow-x-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full';
+         menu1.className = 'transition-width w-64 overflow-hidden relative flex bg-gray-900 shadow h-full fixed flex-col justify-between rounded-tr rounded-br';
+         menu2.className = 'transition-width w-64 overflow-hidden relative  overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 fixed h-full';
          
          setTimeout(function(){
-               profilename.className = 'text-gray-600 text-sm font-medium';
-               profilebutton.className = 'text-gray-600 text-xs';
-               logotext.className = 'flex justify-center items-center text-white';
-            },150);
+            profilename.className = 'text-gray-600 text-sm font-medium flex-1';
+            profilebutton.className = 'text-gray-600 text-xs';
+            logotext.className = 'flex justify-center items-center text-white';
+         },300);
            
             innerTextComps.forEach(element => {
                 element.className = 'ml-3 flex-1';
@@ -80,7 +80,7 @@ export const SideMenuComponent = () => {
 
 <>
 
-<div className='overflow-x-auto flex flex-no-wrap h-full'>
+<div className='overflow-x-hidden overflow-hidden flex flex-no-wrap h-full'>
 
 <div className='transition-width overflow-x-hidden hidden sm:relative ease w-64 md:block bg-gray-900 shadow-md md:h-screen h-full fixed flex-col justify-between rounded-tr rounded-br' id='miniMenu1'>
 <div class="transition-width overflow-x-hidden sm:relative overflow-y-auto py-4 px-3 bg-gray-50 rounded-tr rounded-br dark:bg-gray-800 w-64 fixed h-full md:h-screen" id='miniMenu2'>
@@ -93,12 +93,13 @@ export const SideMenuComponent = () => {
     </button>
   </div>
     <div className='flex justify-center mt-5'><img width={'50px'} src={image} alt=""/><p className='flex justify-center items-center text-white' id="logotext">&ensp;Admin Panel</p></div>
-    <div className='flex justify-center mt-5 border-t border-gray-700 pt-4'><img src={UserLogo} width={'40px'} alt="" className="rounded-full overflow-hidden shadow bg-gray-300" /><div>
     
-                            <p className="text-gray-600 text-sm font-medium" id="profilename">&ensp;Profile Name </p>
-                            <p className="text-gray-600 text-xs" id="profilebutton"><button className='hover:underline'>&ensp;View Profile</button></p>
-   </div>
-   </div>
+    <div className='flex justify-center border-gray-700 pt-5'><Link to="/account"><img src={UserLogo} width={'40px'} alt="" className="rounded-full overflow-hidden shadow bg-gray-300" /></Link><div>
+    
+    <p className="text-gray-300 text-sm font-medium flex-1" id="profilename">&ensp;Profile Name </p>
+    <p className="text-gray-500 text-xs" id="profilebutton"><button className='hover:underline'>&ensp;View Profile</button></p>
+</div>
+</div>
 
     
       <nav>
@@ -177,6 +178,8 @@ export const SideMenuComponent = () => {
          </li>
       </ul>
       </nav> 
+      
+
    </div>
    
 </div>

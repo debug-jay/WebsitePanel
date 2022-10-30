@@ -1,32 +1,44 @@
 export const ChartData = [
     {
         id: 1,
-        year: 2018,
-        userGain: 73000,
+        month: 'May',
+        userGain: 1200,
         userLost: 823,
+        profit: 4560
     },
     {
         id: 2,
-        year: 2019,
-        userGain: 57000,
+        month: 'June',
+        userGain: 1585,
         userLost: 823,
+        profit: 3890
     },
     {
         id: 3,
-        year: 2020,
-        userGain: 42500,
+        month: 'July',
+        userGain: 875,
         userLost: 823,
+        profit: 5439
     },
     {
         id: 4,
-        year: 2021,
-        userGain: 77830,
+        month: 'August',
+        userGain: 980,
         userLost: 823,
+        profit: 4655
     },
     {
         id: 5,
-        year: 2022,
-        userGain: 68270,
+        month: 'September',
+        userGain: 697,
         userLost: 823,
+        profit: 3978
+    },
+    {
+        id: 6,
+        month: 'October',
+        userGain: 898,
+        userLost: 823,
+        profit: 4103
     },
 ]

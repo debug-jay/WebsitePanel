@@ -7,105 +7,140 @@ export const TeamListComponent = () => {
     return(
         <>
         
-            <div className=" w-full -z-20">
-            
-<div class="overflow-x-auto rounded-md shadow-lg ml-2 md:ml-auto">
-    <table class="w-full text-sm text-left border border-gray-500 text-gray-400">
-        <thead class="text-xs uppercase  bg-gray-700 text-gray-400">
-            <tr>
-                <th scope="col" class="py-3 px-6">
-                    Profile
-                </th>
-                <th scope="col" class="py-3 px-6">
-                    Role
-                </th>
-                <th scope="col" class="py-3 px-6">
-                    Contact
-                </th>
-                <th scope="col" class="py-3 px-6">
-                    Edit
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class=" border-b bg-gray-800 border-gray-700">
-                <th scope="row" class="py-4 px-6 font-medium  whitespace-nowrap text-white">
-                   <div className='flex items-center'>
-                   <img src={UserLogo} width="40px" className='border rounded-full bg-gray-300'></img> <p className='px-4'>Nick Biggs</p></div>
-                </th>
-                <td class="py-4 px-6">
-                    Sales
-                </td>
-                <td class="py-4 px-6">
-                (900)-555-0897
-                </td>
-                <td class="py-4 px-6">
-                    
-                    <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>
-                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="py-4 px-6 font-medium  whitespace-nowrap text-white">
-                <div className='flex items-center'>
-                   <img src={UserLogo} width="40px" className='border rounded-full bg-gray-300'></img> <p className='px-4'>Jessica Bruns</p></div>
-                </th>
-                <td class="py-4 px-6">
-                    Advertisements
-                </td>
-                <td class="py-4 px-6">
-                bruns.jessica@company.org
-                </td>
-                <td class="py-4 px-6">
-                <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
-            </tr>
-            <tr class="bg-white dark:bg-gray-800">
-                <th scope="row" class="py-4 px-6 font-medium  whitespace-nowrap text-white">
-                <div className='flex items-center'>
-                   <img src={UserLogo} width="40px" className='border rounded-full bg-gray-300'></img> <p className='px-4'>Kim Waits</p></div>
-                </th>
-                <td class="py-4 px-6">
-                    Tech Lead
-                </td>
-                <td class="py-4 px-6">
-                (900)-555-2121
-                </td>
-                <td class="py-4 px-6">
-                <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-t">
-                <th scope="row" class="py-4 px-6 font-medium  whitespace-nowrap text-white">
-                <div className='flex items-center'>
-                   <img src={UserLogo} width="40px" className='border rounded-full bg-gray-300'></img> <p className='px-4'>John Kreshaw</p></div>
-                </th>
-                <td class="py-4 px-6">
-                    Marketing
-                </td>
-                <td class="py-4 px-6">
-                (900)-555-3344
-                </td>
-                <td class="py-4 px-6">
-                <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-t">
-                <th scope="row" class="py-4 px-6 font-medium  whitespace-nowrap text-white">
-                <div className='flex items-center'>
-                   <img src={UserLogo} width="40px" className='border rounded-full bg-gray-300'></img> <p className='px-4'>Tim Latimore</p></div>
-                </th>
-                <td class="py-4 px-6">
-                    Developer
-                </td>
-                <td class="py-4 px-6">
-                latimore.tim@company.org
-                </td>
-                <td class="py-4 px-6">
-                <div className='flex space-x-1'><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={pencilSymbol} width="18px"/><img className='hover:cursor-pointer hover:bg-gray-600 rounded-md' src={trashSymbol} width="25px"/></div>                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div className='border border-black shadow-lg p-3 mt-5 rounded-lg w-56 hover:cursor-pointer flex items-center justify-between hover:bg-gray-200 ml-2 md:ml-0'><p className=' text-lg'>Add New Person</p> <img src={plusSymbol} width="30px"/></div>
-            </div>
-            
+            <div className="overflow-hidden w-full -z-20 mt-5">
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 overflow-hidden xl:ml-5 p-4'>
+
+                <div className='flex justify-center'>
+                <div className='border rounded-md bg-white h-96 w-80 shadow-lg'>
+                    <div className=' flex justify-center'>
+                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <img src={UserLogo} alt="" className='w-20'/>
+                    </div> 
+                    </div>
+
+                    <div id="main-body" className='grid grid-cols-1 mt-5'>
+                        <div className='flex justify-center'>
+                        <p id="team-name" className='text-2xl'>John Wayne</p>
+                        </div>
+
+                        <div className='flex justify-center'>
+                        <p className=''>Developer</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Contact:</span> 999-745-8834</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Current Task:</span> System Operations</p>
+                        </div>
+
+                        <div className='flex justify-center mt-10 w-1/2'>
+                        <button className='shadow-md border border-black border-opacity-40 rounded-full p-1 text-white bg-black hover:bg-white hover:text-black'><p className='p-1'>Message</p></button>                        </div>
+
+                    </div>
+
+                </div>
+                </div>
+
+                <div className='flex justify-center'>
+                <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 md:mt-0'>
+                    <div className=' flex justify-center'>
+                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <img src={UserLogo} alt="" className='w-20'/>
+                    </div> 
+                    </div>
+
+                    <div id="main-body" className='grid grid-cols-1 mt-5'>
+                        <div className='flex justify-center'>
+                        <p id="team-name" className='text-2xl'>Thomas Crow</p>
+                        </div>
+
+                        <div className='flex justify-center'>
+                        <p className=''>Tech Lead</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Contact:</span> 999-745-8834</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Current Task:</span> Technical Managing</p>
+                        </div>
+
+                        <div className='flex justify-center mt-10 w-1/2'>
+                        <button className='shadow-md border border-black border-opacity-40 rounded-full p-1 text-white bg-black hover:bg-white hover:text-black'><p className='p-1'>Message</p></button>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <div className='flex justify-center'>
+                <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 xl:mt-0'>
+                    <div className=' flex justify-center'>
+                    <div className='border border-black w-20 rounded-full mt-5'>
+                    <img src={UserLogo} alt="" className='w-20'/>
+                    </div> 
+                    </div>
+
+                    <div id="main-body" className='grid grid-cols-1 mt-5'>
+                        <div className='flex justify-center'>
+                        <p id="team-name" className='text-2xl'>Ian Wilson</p>
+                        </div>
+
+                        <div className='flex justify-center'>
+                        <p className=''>Team Management</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Contact:</span> 999-745-8834</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Current Task:</span> Team Operations</p>
+                        </div>
+
+                        <div className='flex justify-center mt-10 w-1/2'>
+                        <button className='shadow-md border border-black border-opacity-40 rounded-full p-1 text-white bg-black hover:bg-white hover:text-black'><p className='p-1'>Message</p></button>                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+                <div className='flex justify-center'>
+                <div className='border rounded-md bg-white h-96 w-80 shadow-lg mt-8 2xl:mt-0 mb-10'>
+                    <div className=' flex justify-center'>
+                    <div className='border border-black w-20 rounded-full mt-5 '>
+                    <img src={UserLogo} alt="" className='w-20'/>
+                    </div> 
+                    </div>
+
+                    <div id="main-body" className='grid grid-cols-1 mt-5'>
+                        <div className='flex justify-center'>
+                        <p id="team-name" className='text-2xl'>Kayla Johnson</p>
+                        </div>
+
+                        <div className='flex justify-center'>
+                        <p className=''>Sales Team</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Contact:</span> 999-745-8834</p>
+                        </div>
+
+                        <div className='flex justify-center mt-5'>
+                        <p className=''><span className='font-bold'>Current Task:</span> Sales & Reporting</p>
+                        </div>
+
+                        <div className='flex justify-center mt-10 w-1/2'>
+                        <button className='shadow-md border border-black border-opacity-40 rounded-full p-1 text-white bg-black hover:bg-white hover:text-black'><p className='p-1'>Message</p></button>                        </div>
+
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>  
         </>
     );
 }

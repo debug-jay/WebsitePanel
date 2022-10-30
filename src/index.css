@@ -8,22 +8,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 #miniMenu1, #miniMenu2 {
   /*width: 3.55rem;
@@ -49,4 +42,37 @@ code {
 #children {
   transition-duration: 450ms;
   
+}
+
+#componentText {
+  font-family: "JosefinSans";
+}
+
+/* EVERYTHING TO DO WITH FONTS */
+@font-face {
+  font-family: "UbuntuMono-R";
+  font-style: normal;
+  font-weight: normal;
+  src: local("UbuntuMono-R.ttf") url("./fonts/UbuntuMono-R.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "UbuntuMono-B";
+  font-style: normal;
+  font-weight: normal;
+  src: local("UbuntuMono-B.ttf") url("./fonts/UbuntuMono-B.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu-R";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ubuntu-R.ttf") url("./fonts/Ubuntu-R.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "JosefinSans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("JosefinSans-Regular.ttf") url("./fonts/JosefinSans-Regular.ttf") format("truetype");
 }

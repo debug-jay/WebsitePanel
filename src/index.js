@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { Index } from './components/SideMenuComponent';
 
+
 // Routes Pages Import
 import { RoutesPages } from './pages/RoutesPages';
 

@@ -65,43 +65,43 @@ export const MobileNavigation = () =>
     <div className=" grid grid-cols-3 bg-transparent w-full flex-grow lg:flex lg:items-center lg:w-auto  lg:backdrop-blur-none lg:border-none" id='nav-handler'>
     
     <div className="text-md lg:flex-grow lg:flex justify-center items-center ">
-      <Link to="/dashboard" className="flex justify-center mt-5 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-14 underline">
+      <Link to="/dashboard" className="flex justify-center mt-5 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-14 ">
       Dashboard
       </Link>
-      <Link to="/management" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-14 underline">
+      <Link to="/management" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-14 ">
       Management
       </Link>
-      <Link to="/inbox" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+      <Link to="/inbox" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
       Inbox
       </Link>
     </div>
 
     <div className='text-md lg:flex-grow lg:flex justify-center items-center'>
-    <Link to="/users" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+    <Link to="/users" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
     Users
       </Link>
-      <Link to="/products" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+      <Link to="/products" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
       Products
       </Link>
-      <Link to="/team" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+      <Link to="/team" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
       Team
       </Link>
     </div>
 
 
     <div className='text-md lg:flex-grow lg:flex justify-center items-center'>
-    <Link to="/documentation" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+    <Link to="/documentation" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
     Documentation
       </Link>
-      <Link to="/components" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+      <Link to="/components" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
       Components
       </Link>
-      <Link to="/help" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white underline">
+      <Link to="/help" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white hover:text-white ">
       Help
       </Link>
     </div>
 
-    <div className='lg:mr-5 md:hidden col-span-3 flex justify-center'>
+    <div className='lg:mr-5 col-span-3 flex justify-center'>
         <Link to="/signin" className="mb-5 lg:mb-0 flex justify-center items-center text-sm px-4 py-2 leading-none mobile:mr-5 mobile:ml-5 border border-white rounded-md text-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 w-1/3">Sign In</Link>
     </div>
     <br/>
