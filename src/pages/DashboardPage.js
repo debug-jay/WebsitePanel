@@ -16,21 +16,35 @@ export const DashboardPage = (props) => {
             backgroundColor: [
                 "rgba(0,50,200,0.5)"
             ],
-            
+            borderColor: [
+                "rgba(0,0,0,0.5)"
+            ],
+            borderWidth: 1,
+            borderSkipped: false, 
         },
         {
             label: "Users Lost",
             data: ChartData.map((data)=>data.userLost),
             backgroundColor: [
                 "rgba(200,50,100,0.5)"
-            ]
+            ],
+            borderColor: [
+                "rgba(0,0,0,0.5)"
+            ],
+            borderWidth: 1,
+            borderSkipped: false, 
         },
         {
             label: "Montly Profit",
             data: ChartData.map((data)=>data.profit),
             backgroundColor: [
                 "rgba(20,200,0,0.5)"
-            ]
+            ],
+            borderColor: [
+                "rgba(0,0,0,0.5)"
+            ],
+            borderWidth: 1,
+            borderSkipped: false, 
         }]
     });
     
@@ -49,7 +63,7 @@ export const DashboardPage = (props) => {
             <div className=" grid grid-cols-1 md:grid-cols-2  border-black md:space-y-0">
 
                             
-            <div className='scale-90 mt-2 lg:scale-80 col-span-1 md:col-span-2 lg:row-start-1 lg:col-span-2 flex justify-center w-full mx-auto items-center border-gray-500' >
+            <div className=' mt-2 col-span-1 md:col-span-2 lg:row-start-1 lg:col-span-2 flex justify-center w-full mx-auto items-center border-gray-500' >
                     <div className='w-full lg:w-9/12 xl:w-8/12'>
                         <Chart chartData={chartData}/>
                     </div>
