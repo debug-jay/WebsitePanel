@@ -59,7 +59,7 @@ export const DashboardPage = (props) => {
 
         
 
-            <div className="overflow-hidden -z-10" id="loadedpage"><p className="text-3xl font-semibold px-6 mt-5 mb-5 md:mb-0" id="componentText">Dashboard Page</p>
+            <div className="overflow-hidden -z-10" id="loadedpage"><p className="text-3xl font-semibold px-6 mt-5 mb-5 md:mb-0" id="componentText">Dashboard</p>
             <div className=" grid grid-cols-1 md:grid-cols-2  border-black md:space-y-0">
 
                             
@@ -76,7 +76,7 @@ export const DashboardPage = (props) => {
                 </div>
 
 
-                <div className="overflow-hidden border-gray-500 col-span-1 flex justify-center bg-transparent scale-90 lg:row-start-2">
+                <div className="overflow-hidden 2xl:mt-5 border-gray-500 col-span-1 flex justify-center bg-transparent scale-90 lg:row-start-2">
                 <div className="overflow-hidden border-gray-500 rounded-md w-full bg-white shadow-lg">
                 <div className='border border-gray-500 rounded-md shadow-md overflow-hidden '>
                     <props.profitComp/>
@@ -86,9 +86,9 @@ export const DashboardPage = (props) => {
                 
 
                 
-                <div className=" md:px-6 py-1 overflow-hidden border-gray-500 col-span-1 md:col-span-2 md:grid-cols-3 row-start-4 lg:row-start-3 lg:col-start-1 grid lg:grid-cols-3 bg-transparent">
+                <div className=" md:px-6 py-1  overflow-hidden border-gray-500 col-span-1 md:col-span-2 md:grid-cols-3 row-start-4 lg:row-start-3 lg:col-start-1 grid lg:grid-cols-3 bg-transparent">
                 <div className=" border-gray-500 rounded-2xl md:mt-0 lg:mr-5 md:mr-2">
-                <div className=' border-gray-500 rounded-2xl shadow-md border scale-90'>
+                <div className=' border-gray-500 rounded-2xl shadow-md border scale-90 '>
                     <props.reProfitComp/>
                </div>
                 </div>

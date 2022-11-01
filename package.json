@@ -55,5 +55,6 @@
     "concurrently": "^7.4.0",
     "tailwindcss": "^3.1.8",
     "wait-on": "^6.0.1"
-  }
+  },
+  "proxy": "https://25ddwtqlsatsevbgbgqp54h3zy0bovbt.lambda-url.us-east-1.on.aws"
 }

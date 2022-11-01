@@ -13,6 +13,8 @@ import { useNavigate } from "react-router-dom";
 
 import { RefreshPage } from "../scripts/RefreshPage";
 
+import loadingIcon from '../images/loadingIcon.svg';
+
 export const SignInPage = () => {
     
     const [username, SetUsername] = useState('');
@@ -20,6 +22,8 @@ export const SignInPage = () => {
     const [loading, setLoading] = useState(false);
 
     const user = [{username: `${username}`, password: `${password}`}];
+
+    
 
     let navigate = useNavigate();
 
@@ -30,9 +34,10 @@ export const SignInPage = () => {
 
      const CheckAuth = async () => {
         const post_link = 'https://25ddwtqlsatsevbgbgqp54h3zy0bovbt.lambda-url.us-east-1.on.aws/api/checkAuth';
-        
+        //const buttonBackground = document.getElementById('signinbutton');
         try{
             setLoading(true);
+            //buttonBackground.className = 'py-3 w-64 text-xl text-black bg-white border border-gray-900 rounded-2xl';
             console.log(`username: ${username}, password: ${password}, loading: ${loading}, logged In: ${getAuth()} `);
             await axios.post(post_link,{
                 username: `${username}`,
@@ -52,10 +57,17 @@ export const SignInPage = () => {
                     setAuth('false');
                 }   
                 setLoading(false);
-                RefreshPage();
+                //buttonBackground.className = 'py-3 w-64 text-xl text-white hover:text-black hover:bg-white border bg-black hover:border-gray-900 rounded-2xl';
+                if(getAuth() == 'true')
+                {
+                    RefreshPage();
+                }
             })
             .catch(err=>{
                 console.log(err);
+                //setAuth('false');
+                //setLoading(false);
+                //buttonBackground.className = 'py-3 w-64 text-xl text-white hover:text-black hover:bg-white border bg-black hover:border-gray-900 rounded-2xl';
             })
         } catch(e){
             console.log(e);
@@ -64,20 +76,20 @@ export const SignInPage = () => {
     
     return(
         <div className=" h-screen -z-10 scale-90 md:scale-100">
-        <div class="min-h-screen  flex justify-center items-center">
-	<div class="py-12 px-12 bg-white rounded-2xl shadow-xl border border-gray-500">
+        <div className="min-h-screen  flex justify-center items-center">
+	<div className="py-12 px-12 bg-white rounded-2xl shadow-xl border border-gray-500">
 		<div className=" justify-center">
-			<h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Welcome Admin!</h1>
-			<p class="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer ">Sign In To Your Role as a Admin</p>
+			<h1 className="text-3xl font-bold text-center mb-4 cursor-pointer">Welcome Admin!</h1>
+			<p className="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer ">Sign In To Your Role as a Admin</p>
 		</div>
-		<div class="space-y-4"> 
+		<div className="space-y-4"> 
             <input onChange={(e)=>SetUsername(e.target.value)} type="text" placeholder="Username" className="block text-sm py-3 px-4 rounded-lg w-full border outline-none"/>
-			<input onChange={(e)=>SetPassword(e.target.value)} type="password" placeholder="Password" class="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
+			<input onChange={(e)=>SetPassword(e.target.value)} type="password" placeholder="Password" className="block text-sm py-3 px-4 rounded-lg w-full border outline-none" />
         </div>
 
-		<div class="text-center mt-6">
-				<button onClick={()=>CheckAuth()} class="py-3 w-64 text-xl text-white bg-blue-400 rounded-2xl">Sign In</button>
-				<p class="mt-4 text-sm">Probelm Signing In? <span class="underline cursor-pointer"> <Link to="/contact">Contact Owner</Link></span>
+		<div className="text-center mt-6">
+				<button id="signinbutton" onClick={()=>CheckAuth()} className="py-3 w-64 text-xl text-white hover:text-black hover:bg-white border bg-black hover:border-gray-900 rounded-2xl">{loading ? <div className="flex justify-center"><img src={loadingIcon} width="30px" alt=""/></div> : "Sign In"}</button>
+				<p className="mt-4 text-sm">Probelm Signing In? <span className="underline cursor-pointer"> <Link to="/contact">Contact Owner</Link></span>
 				</p>
 		</div>
         

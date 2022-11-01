@@ -16,7 +16,7 @@ export const AccountPage = () => {
     return(
         <>
             <div className="">
-            Account Page
+            Account
             <button onClick={()=>UserLogout()} className='border p-2 m-5 bg-green-500 rounded-full'>Logout</button>
             </div>
         </>

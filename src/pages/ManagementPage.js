@@ -9,7 +9,7 @@ export const ManagementPage = (props) => {
 
 </div>
         <div className="">
-        <div className="overflow-hidden -z-10" id="loadedpage"><p className="text-3xl font-semibold px-6 mt-5 mb-5 md:mb-0">Management Page</p>
+        <div className="overflow-hidden -z-10" id="loadedpage"><p className="text-3xl font-semibold px-6 mt-5 mb-5 md:mb-0">Management</p>
         <div className="md:space-x-3 grid grid-cols-1 md:grid-cols-2">
 
         <div className="mb-5 mt-5 col-span-1 scale-90 rounded-md shadow-md">

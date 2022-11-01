@@ -6,7 +6,7 @@ export const HelpPage = () => {
         
         <div className="">
             
-            <div className="  h-screen -z-10" id="loadedpage"><div className="">Help Page</div></div>
+            <div className="  h-screen -z-10" id="loadedpage"><div className="">Help</div></div>
 
         </div>
        
