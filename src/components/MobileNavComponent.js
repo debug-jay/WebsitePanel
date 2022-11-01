@@ -71,20 +71,21 @@ export const MobileNavigation = () =>
       <Link to="/management" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white lg:mr-14 hover:underline">
       Management
       </Link>
-      <Link to="/inbox" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
-      Inbox
-      </Link>
-    </div>
-
-    <div className='text-md lg:flex-grow lg:flex justify-center items-center'>
-    <Link to="/users" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
-    Users
-      </Link>
       <Link to="/products" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
       Products
       </Link>
+
+    </div>
+
+    <div className='text-md lg:flex-grow lg:flex justify-center items-center'>
+    <Link to="/inbox" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
+      Inbox
+      </Link>
       <Link to="/team" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
       Team
+      </Link>
+    <Link to="/members" className="flex justify-center mt-6 lg:inline-block lg:mt-0 text-white text-lg hover:text-white hover:underline">
+    Members
       </Link>
     </div>
 
